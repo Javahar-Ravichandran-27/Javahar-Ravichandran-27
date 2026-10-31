@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova Threads — Made to be lived in</title>
+  <meta name="description" content="Modern essentials, thoughtfully made. Shop tees, hoodies, outerwear and more from Nova Threads.">
+  <meta name="theme-color" content="#f5f2ec">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23151515'/><text x='16' y='22' font-family='Georgia' font-size='18' fill='%23f5f2ec' text-anchor='middle'>N</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="announce">Free shipping on orders over $100 · Free 30-day returns</div>
+  <header class="header">
+    <div class="container header-inner">
+      <button class="icon-btn menu-btn" data-action="menu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <a href="/" class="logo" data-link>Nova<span>Threads</span></a>
+      <nav class="nav" id="nav">
+        <a href="/shop?new=true" data-link>New In</a>
+        <a href="/shop?gender=women" data-link>Women</a>
+        <a href="/shop?gender=men" data-link>Men</a>
+        <a href="/shop?category=accessories" data-link>Accessories</a>
+        <a href="/shop?sale=true" data-link class="nav-sale">Sale</a>
+        <a href="/about" data-link>Our Story</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" data-form="search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input name="q" type="search" placeholder="Search" aria-label="Search products">
+        </form>
+        <a href="/account" class="icon-btn" data-link aria-label="Account">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+        </a>
+        <button class="icon-btn bag-btn" data-action="open-cart" aria-label="Open bag">
+          <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="bag-count" id="bag-count" hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo" data-link>Nova<span>Threads</span></a>
+        <p>Modern essentials, made slowly and responsibly. Designed to be worn for years — not seasons.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="/shop?new=true" data-link>New In</a>
+        <a href="/shop?category=tees" data-link>Tees</a>
+        <a href="/shop?category=hoodies" data-link>Hoodies</a>
+        <a href="/shop?category=outerwear" data-link>Outerwear</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="/contact" data-link>Contact</a>
+        <a href="/about#shipping" data-link>Shipping &amp; Returns</a>
+        <a href="/account" data-link>My Orders</a>
+      </div>
+      <div class="footer-news">
+        <h4>Join the community</h4>
+        <p>Early access to drops and 10% off your first order.</p>
+        <form data-form="newsletter" class="inline-form">
+          <input type="email" name="email" placeholder="Email address" required aria-label="Email address">
+          <button class="btn btn-sm">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Nova Threads. All rights reserved.</span>
+      <span>Instagram · TikTok · Pinterest</span>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" data-action="close-cart"></div>
+  <aside class="drawer" id="cart" aria-label="Shopping bag" aria-hidden="true"></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
